@@ -1,0 +1,49 @@
+/*@import"../../App.css";*/
+.navbar{
+    height: 100px;
+}
+.navbar .wrapper{
+    max-width: 1266px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    /*
+    @include mobile{
+        justify-content:flex;
+        padding:20px
+    }
+        */
+}
+@media (max-width: 738px){
+    .navbar .wrapper{
+        justify-content: flex-end;
+        padding: 20px;
+    }
+}
+.navbar .wrapper span{
+    font-weight: bold;
+    font-size: 30px;
+
+    /*
+    @include mobile{
+        display: none;
+    }
+        */
+}
+@media (max-width: 738px){
+    .navbar .wrapper span{
+        display: none;
+    }
+}
+
+.navbar .wrapper .social{
+    display: flex;
+    gap: 20px;
+}
+.social img{
+    width: 30px;
+    height: 30px;
+}
